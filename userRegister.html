@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User add Form</title>
+    <link rel="Stylesheet" href="./styles.css">
+</head>
+</head>
+<body>
+    <form action ="#" class="form">
+        <div class = "form-content">
+        <header class="head">
+            <h1>User Add Form</h1>
+        </header>
+        <div class="flex-outer">
+            <label class="label text" for="firstname">First Name</label>
+            <input class="input" type="text" id="firstname" name="name" placeholder="Your first name" required>
+           <div class="flex-inner">
+            <error-output class="firstname-error" for="text"></error-output>
+        </div>
+        </div>
+        <div class="flex-outer">
+            <label class="label text" for="lastname">Last Name</label>
+            <input class="input" type="text" id="lastname" name="name" placeholder="Your first name" required>
+            <error-output class="lastname-error" for="text"></error-output>
+        </div>
+        <div class="flex-outer">
+            <label class="label text" for="gender">Gender</label>
+                <input type="radio" name="gender" value="male">
+                <label class="text" for="male">Male</label>
+                <input type="radio" name="gender" value="female">
+                <label class="text" for="female">Female</label>
+        </div>
+        <div class="flex-outer">
+            <label class="label text" for="email">Email</label>
+            <input class="input" type="email" id="email" name="email" placeholder="Your email id" required>
+            <error-output class="email-error" for="text"></error-output>
+        </div>
+        <div class="flex-outer">
+            <label class="label text" for="phone">Phone</label>
+            <input class="input" type="tel" id="phone" name="phoneno" placeholder="Your phone number" required>
+            <error-output class="phone-error" for="text"></error-output>
+        </div>
+        <div class="flex-outer">
+            <label class="label text" for="salary">salary: </label>
+            <input class="input" type="range" name="salary" id="salary" min="300000" max="500000" step="100" value="400000">
+            <output class="salary-output text" for="salary">400000</output>
+        </div>
+        <div class="flex-outer">
+            <label class="label text" for="department">Department</label>
+            <div class="content">
+                <input class="checkbox" type="checkbox" name="hr" id="hr" values="HR">
+                <label class="text" for="hr">HR</label>
+                <input class="checkbox" type="checkbox" name="sales" id="sales" values="Sales">
+                <label class="text" for="sales">Sales</label>
+                <input class="checkbox" type="checkbox" name="finance" id="finance" values="Finance">
+                <label class="text" for="finance">Finance</label>
+                <input class="checkbox" type="checkbox" name="engineer" id="engineer" values="Engineer">
+                <label class="text" for="engineer">Engineer</label>
+                <input class="checkbox" type="checkbox" name="others" id="others" values="Others">
+                <label class="text" for="others">Others</label>
+            </div>
+        </div>
+        <div>
+        
+        <div class="button">
+                <input type="submit" class="button submitButton" id="submitButton"></button>
+
+        </div>
+    </div>
+    </form>
+    
+    <script src='../EmployeePayroll-Management-frontEnd/employeeManagementRegister.js'></script>
+</body>
+</html>

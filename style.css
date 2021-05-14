@@ -8,7 +8,7 @@ body{
     justify-content: center;
     align-items: center;
     padding-top: 70px;
-    background-color:lightblue;
+    background-color:white;
 }
 h1{
     text-align: center;
@@ -21,7 +21,7 @@ h1{
     border: 1px solid black;
     padding: 20px;
     height: 500px;
-    border-radius: 16px;
+    box-shadow: 5px 10px;
     background-color:white;
 }
 .head{
@@ -29,7 +29,7 @@ h1{
     padding-bottom: 10px;
     display: flex;
     flex-direction: column;
-    font: normal normal bold 24px/37px Roboto;
+    font: normal normal bold 20px/27px Roboto;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     letter-spacing: 0px;
     text-transform: capitalize;
@@ -48,7 +48,8 @@ label,input{
     font-size: 14px;
 }
 .content,label{
-    flex-direction:row-reverse;
+    display: flex;
+    flex-direction:row;
 }
 label{
     font-weight: bold;
@@ -88,3 +89,9 @@ error-output {
 
   }
 
+
+  .plus-img{
+    background-color: black;
+    width: 15%;
+    margin-right: 24px;
+}

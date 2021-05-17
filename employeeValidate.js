@@ -1,7 +1,7 @@
 const fName = document.querySelector('#firstname'); 
 const lName = document.querySelector('#lastname');
-const Email = document.querySelector('#email');
-const Phone = document.querySelector('#phone');
+const Email = document.querySelector('#emailId');
+const Phone = document.querySelector('#phoneNumber');
 
 const firstnameError = document.querySelector('.firstname-error');
 const lastnameError = document.querySelector('.lastname-error');
@@ -10,7 +10,7 @@ const phoneError = document.querySelector('.phone-error');
 
 let userRegex = RegExp('^[A-Z]{1}[a-z]{2,}$');
 let emailRegex = RegExp("^([a-zA-Z0-9]*[+._-]*[a-zA-Z0-9]+@[a-zA-Z]+.{3}[a-zA-z.]*[a-zA-z]{2})+$");
-let phoneRegex = RegExp( /^[+][9][1][ ][0-9]{10}$/);
+let phoneRegex = RegExp( /^[0][0-9]{10}$/);
 
 
 
@@ -33,12 +33,12 @@ lName.oninput = function(){
     validateMsg(userRegex,lName,lastnameError,message);
 }
 
-email.oninput = function(){
+Email.oninput = function(){
     let message = "Enter valid Email id"
     validateMsg(emailRegex,Email,emailError,message);
 }
-phone.oninput = function(){
-    let message = "Enteryour  valid Phone"
+Phone.oninput = function(){
+    let message = "Enter your  valid Phone"
     validateMsg(phoneRegex,Phone,phoneError,message);
 }
 const salary = document.querySelector("#salary");

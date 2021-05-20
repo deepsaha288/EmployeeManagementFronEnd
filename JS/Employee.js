@@ -62,5 +62,8 @@ function save() {
             console.log(`Error ${error}`);
         }
     });
-    reload();
+
 }
+function clickButton(){
+    location.href = "HomePage.html"
+    }

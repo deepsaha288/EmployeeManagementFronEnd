@@ -152,12 +152,13 @@ td img{
 
 @media only screen and (max-width: 420px){
     .add-button{
-        font: normal normal normal 16px/23px Roboto;
+        font: normal normal normal 13px/20px Roboto;
         padding: 3px 10px;
     }
     .header-content {
         width: auto;
         padding-bottom: 20px;
+        width: 80%;
     }
     .logo-content{
         width: 50%;

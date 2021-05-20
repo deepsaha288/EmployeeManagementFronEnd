@@ -39,7 +39,7 @@ body{
 }
 
 .form{
-    width: 45%;
+    width: 40%;
     padding: 40px 50px;
     background: #ffffff 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #b5b3ac;
@@ -106,7 +106,6 @@ label{
     display: flex;
     margin-bottom: 15px;
     justify-content: space-between;
-    margin-top: 15px;
 }
 
 .button{
@@ -120,7 +119,7 @@ label{
     background: transparent;
     border: 1px solid #707070;
     font-weight: 400;
-    min-width: 140px;
+    min-width: 120px;
     padding: 7px 7px;
     cursor: pointer;
     align-items: center;
@@ -160,7 +159,7 @@ button:disabled{
 
 @media only screen and (max-width: 960px){
     .cancelButton{
-        margin-left: 0px;
+        margin-left: 170px;
     }
     .form{
         width: 85%;
@@ -194,12 +193,13 @@ button:disabled{
         margin-bottom: 20px;
     }
     .submitButton{
-        margin: 0;
+        margin: 0px;
     }
     .buttonParent{
         flex-direction: column-reverse;
         align-items: flex-start;
     }
+
 }
 
 @media only screen and (max-width: 390px){

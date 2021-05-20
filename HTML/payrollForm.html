@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/payrollForm.css">
+    <title>Employee Form</title>
+    <script src="../JS/Employee.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <header class="header-content header">
+                <span class="emp-text">EMPLOYEE</span>
+                <span class="emp-text emp-payroll">-FORM</span>
+            </div>
+        </div>
+    </header>
+    <div class="form-content">
+        <form class="form" action ="#" onsubmit="save(event); return false">
+            <div class="form-head">User Registration Form</div>
+            <div class="row-content">
+                <label class="label text" for="firstname">FirstName</label>
+                <div>
+                <input class="input" type="text" id="firstname" name="firstname" placeholder="your Firstname" required>
+                <div class="error-output">
+                <error-output class="firstname-error" for="text"></error-output>
+                </div>
+                </div>
+            </div>
+            <div class="row-content">
+                <label class="label text" for="lastname">LastName</label>
+                <div>
+                <input class="input" type="text" id="lastname" name="lastname" placeholder="your Lastname" required >
+                <div class="error-output">
+                <error-output class="lastname-error" for="text"></error-output>
+                </div>
+            </div>
+            </div>
+            <div class="row-content">
+                <label class="label text" for="gender">Gender</label>
+                    <input type="radio" name="gender" value="male">
+                    <label class="text" for="male">Male</label>
+                    <input type="radio" name="gender" value="female">
+                    <label class="text" for="female">Female</label>
+            </div>
+            <div class="row-content">
+                <label class="label text" for="emailId">Email</label>
+                <div>
+                <input class="input" type="text" id="emailId" name="emailId" placeholder="your email"required>
+                <div class="error-output">
+                <error-output class="email-error" for="text"></error-output>
+                </div>
+                </div>
+            </div>
+            <div class="row-content">
+                <label class="label text" for="phoneNumber">phoneNumber</label>
+                <div>
+                <input class="input" type="text" id="phoneNumber" name="phoneNumber" placeholder="your phone"required>
+                <div class="error-output">
+                <error-output class="phone-error" for="text"></error-output>
+            </div>
+            </div>
+            </div>
+            <div class="row-content">
+                <label class="label text" for="salary">salary: </label>
+            <input class="input" type="range" name="salary" id="salary" min="300000" max="500000" step="100" value="400000">
+            <output class="salary-output text" for="salary">400000</output>
+            </div>
+            <div class="row-content">
+                <label class="label text" for="department">Department:</label>
+                <div class="content">
+                    <input class="checkbox" type="checkbox" name="hr" id="hr" values="HR">
+                    <label class="text" for="hr">HR</label>
+                    <input class="checkbox" type="checkbox" name="sales" id="sales" values="Sales">
+                    <label class="text" for="sales">Sales</label>
+                    <input class="checkbox" type="checkbox" name="finance" id="finance" values="Finance">
+                    <label class="text" for="finance">Finance</label>
+                    <input class="checkbox" type="checkbox" name="engineer" id="engineer" values="Engineer">
+                    <label class="text" for="engineer">Engineer</label>
+                    <input class="checkbox" type="checkbox" name="others" id="others" values="Others">
+                    <label class="text" for="others">Others</label>
+                </div>
+            </div>
+            <div class="buttonParent">
+                <div class="submit-reset">
+                    <button type="submit" onclick="save(event);clickButton(event)" value="save" class="button submitButton">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src='../JS/employeeValidate.js'></script>
+</body>
+</html>
